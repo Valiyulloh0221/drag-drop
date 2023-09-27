@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam-5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="mexs">
+    <div class="container">
+        <div class="board" id="left">
+            <h2 class="header-todo">Todo</h2>
+            <div class="todo-board" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="card1" draggable="true">Todo #1</div>
+            <div class="card1" draggable="true">Todo #2</div>
+            <div class="card1" draggable="true">Todo #3</div>
+            <div class="card1" draggable="true">Todo #4</div>
+            </div>
+        </div>
+
+
+        <div class="board" id="center">
+            <h2 class="header-progress">In progress</h2>
+            <div class="progress-board" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="card1" draggable="true">ID #1</div>
+            <div class="card1" draggable="true">ID #2</div>
+            <div class="card1" draggable="true">ID #3</div>
+            <div class="card1" draggable="true">ID #4</div>
+
+        </div>
+    </div>
+
+        <div class="board" id="right">
+            <h2 class="header-done"> Done</h2>
+            <div class="done-board" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="card1" draggable="true">Done#1</div>
+                <div class="card1" draggable="true">Done#2</div>
+                <div class="card1" draggable="true">Done#3</div>
+                <div class="card1" draggable="true">Done#4</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="battons">
+        <button class="btn" id="todo-btn">Add new task</button>
+        <button class="btn" id="progress-btn">Add new task</button>
+        <button class="btn" id="done-btn">Add new task</button>
+    </div>
+</div>
+</body>
+<script src="../src/main.js"></script>
+
+</html>
